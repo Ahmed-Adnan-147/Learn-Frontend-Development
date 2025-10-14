@@ -1,0 +1,76 @@
+ * WHAT IS AN INTERNET? 
+  -> It is a network of multiple devices, basically it is the interconnection of devices.
+     The devices(mobile, laptop, desktop, smart watches, smart tvs, smart fridges). 
+	 These all are connected through some medium. It may be connected through cable, 
+	 fibre optics, ethernet cable etc.
+  -> we transfer the data or files or information after connecting the devices. we follow
+     few rules while transfering the data, rules are the protocols, some common protocols
+	 are TCPIP, smtp, ftp, http protocols etc.
+  -> our websites are based on http protocol as you can see in the url of every website.
+     Eg: google.com, youtube.com etc.
+  -> when we search for any keyword in the google, so the request goes to the google
+     server , it may be in America or somewhere, we get some response. 
+	 NOTE: the request we are sending is called the HTTP request.
+_________________________________________________________________________________________________
+ * HOW WEBSITES ACTUALLY WORKS? 
+  -> Lets take an example of w3schools and hit enter, when enter hit, our browser sends
+     HTTP request to its server, here the w3schools server, then the server sends
+	 response in the form of some files.
+  -----------------------------------------------------------------------------------------
+ * DEV TOOLS & NETWORK TAB: 
+    i) Elements Tab: it is basically our html and css tab.
+   ii) Network Tab: We can see all the calls happening, like the JS, CSS, HTML files
+	    We can basically review the Request urls in this tab.
+		-> The network tab listens to the network activity. When we reload the page or
+		   perform a request, whatever the browser sends the requests to the server will 
+		   be recorded in the network tab. And the server sends some response.
+		-> Now the first request which we see is the Initiator request send by the browser
+		   through url whose type is a document, which means its a HTML document. So the
+		   w3schools server gave the response of type: document.
+		   - we can preview the response that how it looks in html and see the url and the 
+		     response as well in the Network tab.
+		   - Similarly we have multiple responses such as fonts,icons, images, css, js file 
+		     requests etc. Make sure that whenever the browser understands the link, it sends 
+			 the request immediately.
+		   - We also have filters to check the css, js, doc, media, img, font requests separately.
+		   NOTE: whenever we see the type as document, then it will definitely be html.
+  -----------------------------------------------------------------------------------------
+ * LETS MAKE OUR OWN SERVER LOCALLY - (CREATING A DUMMY SERVER)
+    -> First we have installed the vs code text editor, bcoz it is easy and gives automatic boiler
+       plate etc.
+    -> Basically we have created a folder in vs code and added some files such as txt, mp4, img
+       etc. Because we are creating a local server through which we can access these files, by 
+       sending a request.
+    -> Once after adding the files, click on Go live, so the live server is created now, and you 
+       may able to see the files, and can check the url, the browser created a server with
+       http://127.0.0.1:5500/. The servers main url is the folder which we created on workspace.
+    -> By adding the slash we can type the image.png then enter	to access that particular file.
+  -----------------------------------------------------------------------------------------
+ * STARTING WITH BASIC HTML:
+    - HTML: describes the structure of the page.
+  	- Added heading and description in the html file, also created a txt file with intro. So, the 
+	  browser creates a local server through which we can access/serve the txt & html files.
+	- Now we are able to see the response of the server, but while sending the request, we are 
+	  unable to see the request and its files, so when we learn backend development, we will create
+	  our own server, wherein, we will be able to see the request coming as well.
+	- We are unable to see the request coming and going as of now, as we are client(browser).
+	- We can only see the request url, in which url request has gone & the response which we got.
+	  But what request we have got, we cannot see that.
+	 
+	i) Element & Tag: <h1>, <p> is a tag, this tag creates an element.
+	ii) <img> -> self closing tag.
+	-> title tag changes to 'Hello HTML'
+	-> <img src="./image.png" alt="Image"> | Here src is attribute & value is ./image.png
+	-> we can also add more attributes such as width, height in img tag.
+	
+	- Img Height & width attributes:
+	-> the image automatically adjusts the height.
+   -----------------------------------------------------------------------------------------
+ * FAVICON ICONS:
+	-> When we hard reload the page, we get the favicon.ico in network tab, which is coming as 404
+	   as we have not added any icon in our folder.
+	-> Basically, the favicon.ico is the icon which is in the tab of the html. To get the favicon
+	   icon, we can simply type download favicon icon -> Unzip -> and move it to the folder.
+	-> when we again reload the page, the icon gets displayed.
+	-> We can also draw the favicon icon by going to draw favicon -> Download -> Add in folder.
+	-> We can also paste the html link which is created in the draw favicon and can give any name.
