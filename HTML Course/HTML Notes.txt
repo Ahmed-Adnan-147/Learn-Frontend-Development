@@ -62,9 +62,6 @@ ________________________________________________________________________________
 	-> title tag changes to 'Hello HTML'
 	-> <img src="./image.png" alt="Image"> | Here src is attribute & value is ./image.png
 	-> we can also add more attributes such as width, height in img tag.
-	
-	- Img Height & width attributes:
-	-> the image automatically adjusts the height.
    -----------------------------------------------------------------------------------------
  * FAVICON ICONS:
 	-> When we hard reload the page, we get the favicon.ico in network tab, which is coming as 404
@@ -74,3 +71,43 @@ ________________________________________________________________________________
 	-> when we again reload the page, the icon gets displayed.
 	-> We can also draw the favicon icon by going to draw favicon -> Download -> Add in folder.
 	-> We can also paste the html link which is created in the draw favicon and can give any name.
+	-> Just type "how to add favicon in html" , you will get w3schools link where you can just
+	   copy and paste the link in the head section.
+	   Eg: <link rel="icon" type="image/x-icon" href="favicon.ico">
+	   - But this href name icon should be already present in the root folder of your project.
+   -----------------------------------------------------------------------------------------
+ * Shortcut to select a sentence or long text: 
+     Shift + Alt + right arrow
+   -----------------------------------------------------------------------------------------
+ * ALL ABOUT IMAGES:
+   - Img Height & width attributes:
+	-> the image automatically adjusts the height. And the aspect ratio will be maintained.
+	-> NOTE: whenever we give height to the image, the aspect ratio of the image gets destroyed.
+	-> Aspect Ratio means image kitne by kitne ka thaa woh change hojata.
+	-> You can go to google and check "img attributes in html".
+	
+   -> When we try to check the responsiveness of the image, the image is getting overflow. So we
+      use: style="width: 100%;" in HTML element tag. So this code will take care of the overflow
+	  issue while checking responsiveness while reducing the width of the screen. If we are
+	  increasing the width of the screen the image will take full screen width still.
+   -> And if we add the style="width: 100%; max-width: 600px;" , on adding max-width, the image 
+      will not exceed the 600px even if we increase the width more as well. 
+	  
+  <!-- This overflows the image in mobile -->
+  <!-- <img src="image.png" alt="Scenary image">    -->
+
+  <!-- This will not overflow but it takes full screen width of any sizes -->
+  <!-- <img src="image.png" alt="Scenary image" style="width: 100%;"> -->
+
+  <!-- This will not exceed the max width and we can see the white space if the screen width 
+        is more than 600px -->
+  <!-- <img src="image.png" alt="Scenary image" style="width: 100%; max-width: 600px;"> -->
+  
+  ---------------------------------------------------------------------------------------------
+ * HOSTING THE FIRST WEBSITE ON NETLIFY BY DRAGGING THE PROJECT FOLDER:
+ 
+  -> Till now we were displaying the website on our local server which we created, so only we can
+     see that website, if you want everyone to see your website, we will deploy it in the internet,
+	 so that everyone can see & access the website.
+    
+ 

@@ -5,21 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello HTML</title>
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 </head>
 
 <body>
   <h1>Heading 1</h1>
   <p>I am a front end web developer. I have 1.5 years of experience in front end.</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero similique officia facilis iusto ad aliquid
-    dignissimos in labore minus aspernatur magnam nobis, repudiandae nulla odio praesentium doloribus cupiditate quos.
-    Harum, iste hic odit, earum esse doloremque perferendis pariatur quo, aspernatur quia ex soluta sunt ducimus? Odit
-    sit impedit soluta, maiores fugit possimus, qui perferendis officiis vitae voluptatem quo mollitia veritatis
-    incidunt facilis id debitis culpa dolorem, necessitatibus eius officia aspernatur obcaecati aut porro. Ipsa
-    reiciendis voluptatibus corporis, voluptates amet corrupti, debitis quisquam similique ullam facere ipsam, accusamus
-    praesentium exercitationem dolores alias necessitatibus quis itaque in quaerat. Molestiae ratione qui blanditiis!
-  </p>
+  <p>Hi everyone! My name is Adnan Ahmed. I am graduated in Computer Science. I am a Front end Web Developer and have
+    around 1.5 years of experience in front-end.</p>
 
-  <img src="image.png" alt="Scenary image" width="400px" height="100px">
+  <!-- <img src="image.png" alt="Scenary image" width="400px"> -->
+
+  <!-- This overflows the image in mobile -->
+  <!-- <img src="my-image.png" alt="Scenary image">    -->
+
+  <!-- This will not overflow but it takes full screen width of any sizes -->
+  <!-- <img src="my-image.png" alt="Scenary image" style="width: 100%;"> -->
+
+  <!-- This will not exceed the max width and we can see the white space if the screen width is more than 600px -->
+  <img src="my-image.png" alt="My Image" style="width: 100%; max-width: 600px;">
 
 </body>
 
