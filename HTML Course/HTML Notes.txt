@@ -109,5 +109,16 @@ ________________________________________________________________________________
   -> Till now we were displaying the website on our local server which we created, so only we can
      see that website, if you want everyone to see your website, we will deploy it in the internet,
 	 so that everyone can see & access the website.
+_________________________________________________________________________________________________
+ * BUIDING FRONTEND ROADMAP WEBSITE USING HTML:
+    -> prettier is the extension to format the document in our file (maintains indents).
+    -> best practice is not give both height & width at the same time bcoz its aspect ratio will
+       get destroyed, if you give any one then it automatically fits the other according to the
+       aspect ratio.
+    -> we can use <br> tag for line gap.
+    -> we can use <hr> tag for the horizontal line.
+       NOTE: <p> tag has some automatic margin padding, but the ol ul doesn't have that.
+    -> HTML Entities (&copy; | &times;) &nbsp; -> non-breakable space which doesn't break	
+ 
     
  
