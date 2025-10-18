@@ -119,6 +119,38 @@ ________________________________________________________________________________
     -> we can use <hr> tag for the horizontal line.
        NOTE: <p> tag has some automatic margin padding, but the ol ul doesn't have that.
     -> HTML Entities (&copy; | &times;) &nbsp; -> non-breakable space which doesn't break	
- 
+_________________________________________________________________________________________________
+ * INLINE vs BLOCK ELEMENTS:
+    -> You can check whether the element is inline or block, by going to 
+	    DevTools -> Computed -> and type display enter, then you'll get the list of display, there
+		you can check the element is inline or block.
+	-> Block element takes full width of the screen.
+	   Eg: <p>, <h1>, div.
+	-> Inline element takes only its content related width. It won't take full width of the screen.
+	   Eg: <a>, <img/>, <b>, <i>, span
+
+	NOTE: auto rename tag extension is used to make the auto correct when we try to change opening
+	      tag, the closing tag will automatically change itself to opening tag.
+		  
+   -----------------------------------------------------------------------------------------
+ * Div & span:
+   -> This inline element is used most of the times.
+   -> div is used to group or wrap the multiple elements or contents
+   
+   -----------------------------------------------------------------------------------------
+ * Semantic Tags/Elements: these are similar to div, it is used for better read experience.
+   -> nav tag, header tag, section tag, main tag, footer tag, article tag etc. These are the 
+      semantic block tags.
+   -> Semantic Inline Tags: em & strong tag, strong is similar to bold tag, em is similar to 
+      italic tag.
+	  
+	 NOTE: A semantic element clearly describes its meaning to both the browser and the developer.
+	 
+   -----------------------------------------------------------------------------------------
+ * Difference between elements & tags: 
+   -> <h1>(opening tag) this is tag </h1>(closing tag)
+   -> the content inside the tags is called an element.
+     NOTE: element contains width & height, not the tags.
+   
     
  
