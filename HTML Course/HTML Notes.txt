@@ -151,6 +151,32 @@ ________________________________________________________________________________
    -> <h1>(opening tag) this is tag </h1>(closing tag)
    -> the content inside the tags is called an element.
      NOTE: element contains width & height, not the tags.
+   -----------------------------------------------------------------------------------------
+ * Global & Custom Attributes:
+   -> we keep attributes in the opening tag of an element. 
+   -> Attributes are of two types:
+       i) Global attributes: it can be used in any element. for eg, style, class, id, hidden, title
+      ii) Custom attributes: we can create our own attributes such as adnan="developer", it can 
+          be used in JavaScript, but not mostly used.
+_________________________________________________________________________________________________
+ * HTML FORMS:
+    * Understand famous website forms(youtube, flipcart):
+    -> When we search anything on youtube & flipcart, we get the form action in url along with ?
+	   & then followed by name attribute in input then the entered value, you can see all these in
+	   the Elements of Dev tools. 
+	   Eg: https://www.youtube.com/results?search_query=html
+	      - here results is the action value in form element, search_query is the name value in 
+		    input element and then html is the entered field value.
+	--------------------------------------------------------------------------------------------
+	* Integrate Flipcart search in our project
+	-> we can also add our own form input, then copy the flipcart url and then we can add that 
+	   action in our project as well, which is given below:
+	   <form action="https://www.flipkart.com/search?">
+		<input type="text" name="q">
+	   </form>
+		  
+	-> Now, whatever we search for in our project, it will redirect to flipcart and then display
+	   the results.
    
     
  
