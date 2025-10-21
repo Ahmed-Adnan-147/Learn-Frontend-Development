@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Registration Form</title>
+</head>
+<body style="font-family: sans-serif;">
+  <div style="width:100px; margin: 0 auto;">
+    <img src="logo.png" alt="Amazon Logo" width=100%; >
+  </div>
+  <div style="width: 250px; border: 1px solid gainsboro; border-radius: 3px; padding: 15px; margin: 0 auto;">
+    <h2 style="margin-top: 0; margin-bottom: 10px;">Create account</h2>
+    <form action="/search">
+      <p>
+        <div><label for="name">Your name</label></div>
+        <input type="text" id="name" placeholder="First and last name">
+      </p>
+      <p>
+        <div><label for="email">Mobile number or email</label></div>
+        <input type="email" id="email">
+      </p>
+      <p>
+        <div><label for="password">Password</label></div>
+        <input type="password" minlength="6" maxlength="10" id="password">
+      </p>
+      <p>
+        <div><label for="re-password">Re-enter password</label></div>
+        <input type="password" minlength="6" maxlength="10" id="re-password">
+      </p>
+      <p>
+        <input type="checkbox" id="terms" required style="margin-left: 0;">
+        <label for="terms">I agree with the above terms</label>
+      </p>
+
+      <button style="width: 100%; border-radius: 3px; border: none; padding: 5px; background-color: #f5dd65; cursor: pointer;">Continue</button>
+
+      <p>By creating an account, you agree to Amazon's <a href="/search">Conditions of Use</a> and <a href="/search">Privacy Notice.</a></p>
+    </form>
+  </div>
+  
+</body>
+</html>

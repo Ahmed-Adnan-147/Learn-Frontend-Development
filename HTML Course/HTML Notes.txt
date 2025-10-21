@@ -177,6 +177,25 @@ ________________________________________________________________________________
 		  
 	-> Now, whatever we search for in our project, it will redirect to flipcart and then display
 	   the results.
+	--------------------------------------------------------------------------------------------
+	* Form Types:
+     <h2>Types of Inputs</h2>
+	  <form action="/">
+		<input type="text" placeholder="Please enter your name" required>
+		<input type="password" placeholder="Please enter your Password" minlength="6" maxlength="10">
+		<input type="number" min="100" max="500">
+		<input type="tel">
+		<input type="checkbox">
+		<input type="color">
+		<input type="date">
+		<input type="time">
+		<input type="file">
+
+		<button>Submit</button>
+		<!-- <input type="button" value="Submit">
+		<input type="reset" value="Reset"> -->
+	  </form>	
+	
    
     
  
