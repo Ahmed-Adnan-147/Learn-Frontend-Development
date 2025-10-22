@@ -195,7 +195,47 @@ ________________________________________________________________________________
 		<!-- <input type="button" value="Submit">
 		<input type="reset" value="Reset"> -->
 	  </form>	
+_________________________________________________________________________________________________
+ * MISSING PIECES(HTML Doctype, Head tag, Routing, Navigating sections, Comments):	
+   <!DOCTYPE html>  -> This represents that it is a html 5 version we are using.
+	<html lang="en"> -> all the code is inside the html tag, where lang is english.
+	// In head tag, only title & favicon tags will display in the window tab.
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="description" content="Hello world! Welcome to my site. ">
+	  <title>Hello</title>
+	  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+	  <h1>Hello World!</h1>
+	</body>
+	</html>
 	
-   
-    
+   -> <meta charset="UTF-8"> -> this represents the page character encoding
+      - so the UTF-8 is the latest character encoding, which has maximum characters in it.
+	  
+   -> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      - This represents that the browser viewport should be same as the device's viewport.
+	  
+   -> <meta name="description" content="Hello world! Welcome to my site. ">
+      - This will display when we search for something in the google, we get the link followed
+	    by description in google, so the content will display there.
+	  - Basically, google search engine uses this, it searches for the meta description tag.
+	  - we can check this for mdndocs website and then check the meta description tag, in 
+	    the elements dev tools.
+  --------------------------------------------------------------------------------------------
+ * Routing in HTML:
+   -> create link in the index page, and add the href with the newly created html file of 
+      contact us.
+  --------------------------------------------------------------------------------------------
+ * Navigate to some section in the page:
+   -> Pass the id to the section and create the anchor tag where, you give the href as #idname, 
+      so you will be redirected to that section.
+     <a href="#css">CSS</a>
+    <a href="#js">JavaScript</a>
+	
+	-> this will go to the top of the page.
+    <a href="#">Go to Top</a> -> this is good practice as this will not reload the page
+	<a href="">Go to Top</a> -> this is'nt a good practice as this will reload the page	
  
