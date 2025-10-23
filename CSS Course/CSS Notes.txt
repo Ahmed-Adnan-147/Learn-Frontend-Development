@@ -1,0 +1,43 @@
+ * WHAT IS CSS? 
+  -> CSS stands for Cascading Style Sheet. It is used to give styling, such as colors etc and make
+     the wepage more attractive.
+	 
+	* Three ways to write CSS:
+	  i) Inline CSS    Eg: <p style="color: "green";">Hello World!</p>
+	 ii) Internal CSS  
+	      Eg: <style>
+		        p{
+				  color: red;
+				 }
+		      </style>
+			- Here p is called the element selector.
+	iii) External CSS
+	    - link a style file externally
+	
+  -----------------------------------------------------------------------------------------
+ * Understand how HTML loads CSS:
+   -> First of all the browser is displaying the content through HTTP request.
+   -> The server got created and server sends the index.html to the browser.
+   -> Go to network tab, reload the page. So there we display:
+       i) index.html -> Other as initiator because the brwser is sending it.
+      ii) style.css -> index.html:12 as initiator bcoz while checking html file, it got this link.
+
+ -----------------------------------------------------------------------------------------
+ * Basic CSS Properties related to text:
+    p {
+  color: coral;
+  font-size: 32px;
+  font-weight: 700;
+  /* text-decoration: underline; */
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
+  /* text-decoration: underline wavy; */
+  text-decoration: none;
+  font-family: sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+NOTE: You can check the answer in stackoverflow, where you can check with all the answers, in which
+      one answer will have green tick mark, that gives the answer to the question asked.
+	
