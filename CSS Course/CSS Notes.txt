@@ -25,19 +25,51 @@
  -----------------------------------------------------------------------------------------
  * Basic CSS Properties related to text:
     p {
-  color: coral;
-  font-size: 32px;
-  font-weight: 700;
-  /* text-decoration: underline; */
-  /* text-decoration: overline; */
-  /* text-decoration: line-through; */
-  /* text-decoration: underline wavy; */
-  text-decoration: none;
-  font-family: sans-serif;
-  text-align: center;
-  font-style: italic;
-}
+	  color: coral;
+	  font-size: 32px;
+	  font-weight: 700;
+	  /* text-decoration: underline; */
+	  /* text-decoration: overline; */
+	  /* text-decoration: line-through; */
+	  /* text-decoration: underline wavy; */
+	  text-decoration: none;
+	  font-family: sans-serif;
+	  text-align: center;
+	  font-style: italic;
+	}
 
-NOTE: You can check the answer in stackoverflow, where you can check with all the answers, in which
+	NOTE: You can check the answer in stackoverflow, where you can check with all the answers, in which
       one answer will have green tick mark, that gives the answer to the question asked.
+_________________________________________________________________________________________________
+ * INTRODUCTION TO SELECTORS:
+ 
+    i) Element selector
+	   Eg: li {
+	        color: red;
+			}
+			
+   ii) Class selector
+       Eg: .classname {
+	        color: red;
+			}
+			
+  iii) id selector
+       Eg: #idname {
+	        color: red;
+			}
+			
+   iv) Attribute selector
+       Eg: [adnan] {
+	        color: red;
+			}
+	   Eg: [adnan="procodrr"] {
+	        color: blue;
+			}
+			
+    v) Combinator selector
+	   Eg: ul li {
+	        color: red;
+			}
 	
+	NOTE: colorPick EyeDropper extension, it is a chrome extension, which gives you the exact
+	      color of the screen image by hovering it.

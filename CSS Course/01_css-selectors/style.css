@@ -1,0 +1,87 @@
+/* Element selector */
+
+li {
+  /* color: red; */
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* --------------------------------------------- */
+/* Class selector */
+
+.html {
+  color: #E44D26;
+}
+
+.css {
+  color: #254BDD;
+}
+
+.js {
+  color: #EFD81D;
+}
+
+.react {
+  color: #5ED3F3;
+}
+
+.tailwind {
+  color: #36B7F0;
+}
+
+/* --------------------------------------------- */
+/* Id selector */
+
+/* #html {
+  font-size: 32px;
+}
+
+#css {
+  font-size: 32px;
+}
+
+#js {
+  font-size: 32px;
+}
+
+#react {
+  font-size: 32px;
+}
+
+#tailwind {
+  font-size: 32px;
+} */
+
+/* --------------------------------------------- */
+/* Attribute selector */
+
+[class] {
+  background-color: green;
+}
+
+[adnan] {
+  background-color: pink;
+}
+
+[adnan="procodrr"] {
+  background-color: burlywood;
+}
+
+/* --------------------------------------------- */
+/* Combinator selector */
+
+ul p {
+  background-color: antiquewhite;
+}
+
+/* --------------------------------------------- */
+/* Pseudo classes/ selector */
+
+h1:hover {
+  color: green;
+}
+
+ul p:hover {
+  background-color: black;
+  color: white;
+}
