@@ -73,3 +73,33 @@ ________________________________________________________________________________
 	
 	NOTE: colorPick EyeDropper extension, it is a chrome extension, which gives you the exact
 	      color of the screen image by hovering it.
+_________________________________________________________________________________________________
+ * CASCADE, SPECIFICITY & INHERITANCE:
+    i) Cascade: When we write the styles in the css, the importance increases from top to bottom.
+			li {
+			  background-color: green;
+			  color: aquamarine;
+			}
+			li {
+			  background-color: orange;
+			}
+			li {
+			  background-color: cornflowerblue;
+			  color: brown;
+			}
+		- This displays the cornflowerblue color because of cascade will give importance to the
+		  last lines of code by overriding the top lines.
+		  
+	Q) What is Specificity?
+	A) element >> class >> id
+	NOTE: Eventhough, when we call the element by class, at the top line, now comes the specificity
+	      You can check the specificity in the vscode by hovering the element style.
+		  The element with more specificity gets more importance.
+		  
+	NOTE: This also works with multiple style files, if we have two as style.css & style2.css,
+	      then if the link of style2 is down in the html, it works with cascade but if the 
+		  specificity is high in style.css, it displays the style file changes.
+		  
+    Q) What is Inheritance?
+	A) if we give color to the body tag, then all the childrens color will get changed, because 
+	   it is getting inherited.
