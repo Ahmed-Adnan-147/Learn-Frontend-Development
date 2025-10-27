@@ -3,7 +3,7 @@
   background-color: antiquewhite;
 } */
 
-#html {
+/* #html {
   background-color: deeppink;
 }
 
@@ -21,4 +21,15 @@ li {
 li {
   background-color: cornflowerblue;
   color: brown;
+} */
+
+ul {
+  font-size: 32px;
+  font-weight: 900;
+  font-family: cursive;
+  font-style: italic;
+}
+
+button {
+  font-family: inherit;
 }
