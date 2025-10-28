@@ -239,3 +239,11 @@ ________________________________________________________________________________
     <a href="#">Go to Top</a> -> this is good practice as this will not reload the page
 	<a href="">Go to Top</a> -> this is'nt a good practice as this will reload the page	
  
+_________________________________________________________________________________________________
+ * Free code camp learnings:
+   -> The target="__blank" enables the link to open in a new browser tab.
+   -> Few tags doesn't have the closing tag, it is called the void element.
+      Eg: <img> , by the way we can also use it as <img/> as well, but it is not the best practice.
+   -> The alt attribute is not required, but it is recommended for accessibility purposes. 
+      Accessibility means making sure that everyone, including those with disabilities, can use 
+	  and understand things like websites, apps, and physical spaces.
