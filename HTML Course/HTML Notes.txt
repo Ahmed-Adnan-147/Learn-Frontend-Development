@@ -247,3 +247,24 @@ ________________________________________________________________________________
    -> The alt attribute is not required, but it is recommended for accessibility purposes. 
       Accessibility means making sure that everyone, including those with disabilities, can use 
 	  and understand things like websites, apps, and physical spaces.
+   -> The checked attribute is used to specify that the checkbox should be checked by default. 
+      The checked attribute does not require a value.
+   -> There are several common boolean attributes you will encounter in HTML, such as disabled,
+      readonly, and required. 
+   -> The rel attribute is used to specify the relationship between the linked resource and the 
+      HTML document. In this situation, we need to specify that this linked resource is a 
+	  stylesheet. The href attribute is used to specify the location of the URL for the external 
+	  resource. The dot followed by a forward slash in the example tells the computer to look in 
+	  the current folder, or directory, for the styles.css file.
+   -> The head section contains important behind-the-scenes information:
+   -> Now, why is a boilerplate important? It ensures your pages are structured correctly and work 
+      well across different browsers. Using a boilerplate helps you avoid common mistakes and 
+	  follow best practices.
+   -> In the previous step, you put the h1, h2, comment, and p elements inside the main element. 
+      This is called nesting.
+   -> A figure caption (figcaption) element is used to add a caption to describe the image 
+      contained within the figure element.	  
+	     <figure>
+		  <img src="image.jpg" alt="A description of the image">
+		  <figcaption>A cute cat</figcaption>
+		 </figure>
