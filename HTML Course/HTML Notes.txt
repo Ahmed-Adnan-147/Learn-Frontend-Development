@@ -268,3 +268,155 @@ ________________________________________________________________________________
 		  <img src="image.jpg" alt="A description of the image">
 		  <figcaption>A cute cat</figcaption>
 		 </figure>
+	--------------------------------------------------------------------------------------------	 
+    * Id's & classes:
+	  -> The id attribute adds a unique identifier to an HTML element. The hash symbol (#) in front
+	     of title, tells the computer you want to target an id with that value. id names should 
+		 not be used more than once, and they should always be unique.Another thing to note about
+		 id values, is that they cannot have spaces in them. id attribute values should only 
+		 contain letters, digits, underscores, and dashes.
+	  -> In contrast to the id attribute, the class attribute value does not need to be unique and
+   	     can contain spaces.
+	  -> If you wanted to add multiple class names to an element, you can do so by separating the
+	     names by a space. Here is an updated example applying multiple classes to a div element.
+          <div class="box red-box"></div>
+		  
+	NOTE: So, to recap, when should you use an id versus a class? Classes are best used when you
+ 	      want to apply a set of styles to many elements. If you want to target a specific 
+		  element, it is best to use id because those values need to be unique.
+	--------------------------------------------------------------------------------------------
+	* What is an HTML entity (character reference)?
+	  -> A set of characters used to represent a reserved character in HTML.
+	     Eg: &lt;  &gt;  etc.
+		 
+	-> The script element is used to embed executable code. Most developers will use this to 
+	   execute JavaScript code.
+	--------------------------------------------------------------------------------------------
+	* What Is the Role of the Meta Description, and How Does It Affect SEO?
+      -> SEO, or Search Engine Optimization, is a practice that optimizes web pages so they become
+	     more visible and rank higher on search engines. One way to improve your site's SEO, is to
+		 provide a short description for the web page using the meta element. Here is an example
+		 of using the meta element to set a page description for a gardening site:
+			<meta
+			  name="description"
+			  content="Discover expert tips and techniques for gardening in small spaces, 
+			  choosing the right plants, and maintaining a thriving garden."
+			/>
+	--------------------------------------------------------------------------------------------
+	* What Is the Role of Open Graph Tags, and How Do They Affect SEO?
+	  -> The open graph protocol enables you to control how your website's content appears across
+ 	     various social media platforms, such as Facebook, LinkedIn, and many more. By setting 
+		 these open graph properties, you can entice users to want to click and engage with your 
+		 content. You can set these properties through a collection of meta elements inside your 
+		 HTML head section.
+      -> The first important OG property to include would be the title. Here is an example of 
+	     setting the OG title for the freeCodeCamp homepage:
+          <meta content="freeCodeCamp.org" property="og:title" />	
+	  -> For the property attribute, you will need to specify that it is og:title. The content 
+	     attribute is where you will write the title you want displayed for social media sites.
+
+      -> The next important OG property would be the type. Here is an example of using the OG 
+	     type for the freeCodeCamp homepage:
+          <meta property="og:type" content="website" />
+      -> The type property is used to represent the type of content being shared on social media.
+	     Examples of this content include articles, websites, videos, or music.
+
+      -> The third important OG property would be the image. Here is an example of setting the OG
+ 	     image for the freeCodeCamp homepage:
+		 <meta
+		  content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+		  property="og:image"
+		 />
+			
+	NOTE: So how do these open graph properties affect Search Engine Optimization? When your
+	      content is shared on social media, well-crafted OG properties can enhance the appearance
+		  for your content in users' feeds. This can lead to higher click-through rates which 
+		  could signal to search engines that your content is relevant and engaging.
+	--------------------------------------------------------------------------------------------
+	* What Are the Roles of the HTML Audio and Video Elements, and How Do They Work?
+	
+      -> The audio and video elements allow you to add sound and video content to your HTML 
+	     documents. The audio element supports popular audio formats like mp3, wav, and ogg. The 
+		 video element supports mp4, ogg, and webm formats.
+      -> To include audio content on your web page, you can use the audio element with the src 
+	     attribute pointing to the location of your audio file.
+	  -> If you want to see the audio player on the page, then you can add the audio element with 
+	     the controls attribute.
+      -> The controls attribute enables users to manage audio playback, including adjusting volume, 
+	     and pausing, or resuming playback. The controls attribute is a boolean attribute that can 
+		 be added to an element to enable built-in playback controls. If omitted, no controls will 
+		 be shown.
+      -> Apart from the src and controls attributes, there are several other attributes that 
+	     enhance the functionality of the audio element. The loop attribute is a boolean attribute 
+		 that makes the audio replay continuously.
+		 <audio
+		  src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
+		  loop
+		  controls
+		 ></audio>
+	  -> When it comes to audio file types, there are differences in which browsers support which 
+	     type. To accommodate this, you can use source elements inside the audio element and the 
+		 browser will select the first source that it understands. Here's an example of using 
+		 multiple source elements for an audio element:
+			<audio controls>
+			  <source src="audio.ogg" type="audio/ogg" />
+			  <source src="audio.wav" type="audio/wav" />
+			  <source src="audio.mp3" type="audio/mpeg" />
+			</audio>
+			
+      -> The browser will first start with the ogg type, and if it can't play the audio, then 
+	     it'll move down to the next type in the list.
+      -> All the attributes we have learned so far are also supported in the video element. Here's 
+	     an example of using a video element with the loop, controls, and muted attributes.
+      -> Add the autoplay attribute to the opening video tag so the video plays automatically.
+
+    NOTE: The width attribute is being used here to make the video smaller and fit better in the 
+	      preview window. You will learn more about the width attribute in future lessons.
+	<video
+	  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+	  loop
+	  controls
+	  autoplay
+	  width="400"
+	></video>
+	
+	 -> For the src, or source attribute, we are using a video called "Big Buck Bunny" from 
+	 archive.org. If you wanted to display an image while the video is downloading, you can 
+	 use the poster attribute. This attribute is not available for audio elements and is 
+	 unique to the video element. Here's an example of using the poster attribute with content 
+	 provided by peach.blender.org.
+	<video
+	  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+	  loop
+	  controls
+	  muted
+	  poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+	  width="400"
+	></video>
+		
+	--------------------------------------------------------------------------------------------
+	* What Are Common Ways to Optimize Media Assets?
+      -> There are three tools to consider when using media, such as images, on your web pages: 
+	     the size, the format, and the compression.
+
+      -> Let's talk about the size of your images first. When you are building a website, you'll 
+	     often style images to display in a specific size. For example, you might have an image 
+	     display at a 640x480 resolution. 640 represents the width while 480 represents the height 
+		 in pixels. When preparing your image you want to scale it to a 640x480 size to match that 
+		 styling. If you serve an image that is 1920x1080 but you are styling it to be much smaller,
+		 you're requiring your users to download unnecessary data. A smaller resolution results in 
+		 a smaller file size.
+
+      -> The next thing to consider is your file format. Two of the most common file formats are 
+	     PNG and JPG, but these are no longer the most ideal formats for serving images. Unless 
+		 you need support for older browsers, you should consider using a more optimized format, 
+		 like WEBP or AVIF.
+
+      -> Finally, you can run compression algorithms on your images. A compression algorithm is 
+	     used to reduce the size for files or data. There are options like pngcrush to compress 
+		 your images locally, or you can use online compression tools. However, it's worth noting 
+		 that specific file formats, such as JPG, are not lossless. Lossless means that the 
+		 original data can be perfectly reconstructed from the compressed data. If you try to 
+		 compress a JPG image, it will result in a degraded quality. You should keep all these 
+		 things in mind when selecting images for your web pages.
+		 
