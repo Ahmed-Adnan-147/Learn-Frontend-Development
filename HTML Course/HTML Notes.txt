@@ -240,7 +240,7 @@ ________________________________________________________________________________
 	<a href="">Go to Top</a> -> this is'nt a good practice as this will reload the page	
  
 _________________________________________________________________________________________________
- * Free code camp learnings:
+ * FREE CODE CAMP LEARNINGS:
    -> The target="__blank" enables the link to open in a new browser tab.
    -> Few tags doesn't have the closing tag, it is called the void element.
       Eg: <img> , by the way we can also use it as <img/> as well, but it is not the best practice.
@@ -419,4 +419,126 @@ ________________________________________________________________________________
 		 original data can be perfectly reconstructed from the compressed data. If you try to 
 		 compress a JPG image, it will result in a degraded quality. You should keep all these 
 		 things in mind when selecting images for your web pages.
+	--------------------------------------------------------------------------------------------
+	* What Are SVGs, and When Should You Use Them?
+      -> First, you need to understand how images work. Common image formats like PNG and JPG are 
+	     classified as raster formats. This essentially means that they are pixel-based, with the 
+		 data tracking the color value in each pixel.
+      -> A large downside of raster based images is that they do not upscale well. If you've ever 
+	     tried to make a PNG larger, you may have seen that it becomes pixelated, or blurry.
+      -> An SVG is a different kind of image. SVG stands for a scalable vector graphic. A vector 
+	     graphic tracks data based on paths and equations to plot points, lines, and curves. What 
+		 this really means is that a vector graphic, like an SVG, can be scaled to any size without
+		 impacting the quality.
+      -> SVGs specifically have the added benefit of storing data in XML. This means you can use 
+	     them directly in your code as raw HTML with the svg element. It also means you can 
+		 programmatically change the color of the image.
+      -> To change the smiley face to red, change the fill="yellow" to fill="red".
+	      <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="50" cy="50" r="45" stroke="black" stroke-width="4" fill="yellow" />
+			<circle cx="35" cy="40" r="5" fill="black" />
+			<circle cx="65" cy="40" r="5" fill="black" />
+			<path d="M35 65 Q50 80 65 65" stroke="black" stroke-width="4" fill="transparent" />
+		  </svg>
+	  -> So when would you want to use an SVG? A great use case is for icons. If you want to 
+	     create custom bullet points, or add icons to your links to represent social media 
+		 platforms, using SVGs is the best approach. One of the most popular icon libraries, Font 
+		 Awesome, uses SVG images for their icons. SVGs are also great for webpage logos, because 
+		 they scale perfectly. They allow you to adapt your layout to any responsive design you 
+		 need. Next time you have an SVG locally, try opening it with a text editor and playing 
+		 with the code.
+	--------------------------------------------------------------------------------------------
+	* What Are Replaced Elements, and What Are Some Examples?
+      -> A replaced element is an element whose content is determined by an external resource 
+	     rather than by CSS itself. CSS, or cascading stylesheets, is used to add styles to a web 
+		 page. Common examples of replaced elements include the image, iframe, and video elements.
+      -> With replaced elements, you can control the position, or layout of an element. But your 
+	     CSS cannot directly modify the content of that element. This might be easier to explain 
+		 with some examples. Consider the image element, which embeds an image on your web page:
+           <img src="example-img-url" alt="Descriptive text goes here">
+      -> The element itself is replaced with the external object: the image. Your CSS can control 
+	     things like the positioning of the image, or apply a filter to it, but you cannot actually
+		 modify the image itself. A more robust example might be the iframe element, which embeds 
+		 an external site on your web page.
+	  -> Here is an example of using the iframe element for a popular YouTube video on the 
+	     freeCodeCamp channel. If you want to see different videos in the preview window, change 
+		 the value of the src attribute to a video of your choosing.
+         NOTE: Don't worry about the extra attributes mentioned in the interactive example like 
+	      referrerpolicy and allowfullscreen. You will learn more about working with iframe 
+		  elements in a future workshop.
+		  
+		<iframe width="400" height="200" 
+		        src="https://www.youtube.com/embed/u43gJJrVa1I?si=BoDW_puFsy8OEr_Z" 
+				title="Professional Cloud Architect Certification Course – Pass the Exam! 
+				       (YouTube video)" allow="accelerometer; autoplay; clipboard-write; 
+					   encrypted-media; gyroscope; picture-in-picture; web-share" 
+					   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+      -> Other common examples of using the iframe element would be to embed maps onto the page. 
+	     Here is an example of an embedded map.	Try playing around with the map itself by zooming 
+		 in/out.
 		 
+		 <iframe
+		  title="Map of the Royal Observatory, Greenwich, London"
+		  width="300"
+		  height="200"
+		  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik">
+		</iframe>
+	
+	  -> The element itself is replaced with the external object: the site. Your CSS can change 
+	     the positioning of the embedded site, but you cannot modify the site's contents. To dive 
+		 a bit further, if the embedded site has an h1 element, your CSS would not be able to 
+		 style that h1 element. You cannot change the size, font color, and so on.
+      -> There are some other replaced elements, such as video, and embed. And some elements 
+	     behave as replaced elements under specific circumstances. Here's an example of an input 
+		 element with the type attribute set to image:
+          <input type="image" alt="Descriptive text goes here" src="example-img-url">
+      -> This type of input is considered to be a replaced element, but other input types like 
+	     text, or email are not replaced elements.
+	--------------------------------------------------------------------------------------------
+	* How Do You Embed Videos onto Your Page Using the iframe Element?
+      -> In a prior lesson, you were first introduced to the iframe element. In this lesson, you 
+	     will learn more about how to work with the iframe element. This element stands for inline
+		 frame. It's an inline element used to embed other HTML content directly within the HTML 
+		 page. That HTML content could be a video, map, another HTML element, or even other web 
+		 pages.
+      -> Here's an example of embedding a popular freeCodeCamp course from YouTube. To see a 
+	     different video, change the src value to a video of your choosing.
+		 <iframe
+		  width="400"
+		  height="400"
+		  src="https://www.youtube.com/embed/PkZNo7MFNFg?si=-UBVIUNM3csdeiWF"
+		  title="Learn JavaScript - Full Course for Beginners (YouTube video)"
+		  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		  referrerpolicy="strict-origin-when-cross-origin"
+		  allowfullscreen
+		></iframe>
+	  -> The src attribute specifies the URL of the page you want to embed. The width attribute 
+	     specifies the width of the iframe. The height attribute specifies the height of the iframe.
+		 The allowfullscreen attribute allows the user to display the iframe in full screen mode. 
+		 It's also a good practice to specify a title attribute for the iframe, as it's important 
+		 for accessibility.
+      -> Note that the video can come from anywhere. It doesn't have to come from video services 
+	     like YouTube and Vimeo.
+      -> Don't forget you can also embed a map, another web page, or direct HTML within the iframe 
+	     element. Here is an example of an embedded map.
+         Try interacting with the map by zooming in and out.
+		 
+		 <h1>A Map from Openstreetmap.org Embedded with the iframe Element</h1>
+
+		<iframe
+		  width="425"
+		  height="350"
+		  src="https://www.openstreetmap.org/export/embed.html?bbox=3.006134033203125%2C6.150112578753815%2C3.6357879638671875%2C6.749850810550778&amp;layer=mapnik"
+		  title="Map of Lagos area, Nigeria"
+		  style="border: 1px solid black"
+		>
+		</iframe>
+		<br />
+		<small>
+		  <a href="https://www.openstreetmap.org/#map=11/6.4501/3.3210">
+			View Larger Map
+		  </a>
+		</small>
+	  -> If you want to embed direct HTML within the iframe element you have to use the srcdoc
+   	     attribute instead of src.
