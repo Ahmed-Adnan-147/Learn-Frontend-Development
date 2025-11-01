@@ -542,3 +542,6 @@ ________________________________________________________________________________
 		</small>
 	  -> If you want to embed direct HTML within the iframe element you have to use the srcdoc
    	     attribute instead of src.
+		 
+	 -> When you use these states to style your links, there is a specific order you need to 
+	    write your CSS in: link, visited, hover, focus, then active.
