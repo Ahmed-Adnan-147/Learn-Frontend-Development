@@ -1,0 +1,35 @@
+/* Most importance as the specificity is very high */
+/* #html.html {
+  background-color: antiquewhite;
+} */
+
+#html {
+  background-color: deeppink;
+}
+
+.html {
+  background-color: cadetblue;
+}
+
+li {
+  background-color: green;
+  color: aquamarine;
+}
+li {
+  background-color: orange !important;
+}
+li {
+  background-color: cornflowerblue;
+  color: brown;
+}
+
+ul {
+  font-size: 32px;
+  font-weight: 900;
+  font-family: cursive;
+  font-style: italic;
+}
+
+button {
+  font-family: inherit;
+}

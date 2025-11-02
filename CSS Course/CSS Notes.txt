@@ -111,3 +111,10 @@ ________________________________________________________________________________
 		  }
 		  
 		- THis inherits from its parent.
+		
+    -> Inline style specificity is the highest, followed by, id, class, elements.
+	-> To kill the inline specificity we use !important in the css bg color value, so that it 
+	   kills all the specificity and apply this even though if it is an element.
+	   li {
+		  background-color: orange !important;
+		}
