@@ -1,0 +1,32 @@
+/* .one {
+  background-color: aquamarine;
+  width: 500px;
+  max-width: 500px;
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.one {
+  background-color: aquamarine;
+  width: 50%;
+  word-break: break-all;
+}
+.two {
+  background-color: blueviolet;
+} */
+
+/* ------------------------------------------------ */
+.parent {
+  /* width: 800px;*/
+  height: 400px;
+  background-color: crimson;
+}
+.one {
+  background-color: aquamarine;
+  width: 50%;   /* 400px*/
+  /* height: 50%; */
+}
+.one-child {
+  width: 50%;   /* 200px*/
+}

@@ -1,0 +1,65 @@
+ * BOX MODEL IN CSS: 
+   -> Box model consists of content, padding, border, margin.
+   -> The blue part in the box is the content area, green part is padding, yellow part is the 
+      border & orange part is the margin.
+   -> Inside the content, we can display the width & height of the content respectively as
+       640x300, where 640 is the width and 300 is the height respectively.
+   ---------------------------------------------------------------------------------------------
+   * Understanding & playing with height & width:
+     -> lets take two divs, and give the bg color as red & blue. As div is a block level element,
+	    when u open Devtools and try to play with it the width gets changed accordingly. But the 
+		height remains the same bcoz the height will be according to its content in it.
+	 -> Block level elements covers full width of the viewport and the height changes according
+	    to the content in it. If we give lorem100 to div1 then the height will get updated to the 
+		content in it and gets bigger.
+		NOTE: The height is automatically calculated by the browser according to the content size
+		      in it.
+	 -> If we give width as 500px to div1, then the width & height will get fixed, when we reduce 
+	    the viewport, the content will overflow, the div will get the horizontal scroller and 
+		gets overflow in it as the width is fixed to 500px.
+	 -> This is called overflow.
+	 
+   ---------------------------------------------------------------------------------------------
+   * Why you should not give Absolute Height & width:
+     -> In CSS, "absolute height and width" refers to setting the dimensions of an element using 
+	    absolute length units. These units are fixed and do not change based on the size of the 
+		viewport or parent elements. 
+		- Absolute Length Units: px, cm, mm, in, pc, pt etc.
+		
+   ---------------------------------------------------------------------------------------------
+   * Why should you use "max-width" Property:
+     -> When u use max-width: 500px, instead of width, then the width doesn't exceeds 500, but when
+        we reduce the viewport, then the width reduces and the height increases accordingly, so 
+        the content will not overflow, and we'll not get scrollbar.
+		
+   ---------------------------------------------------------------------------------------------
+   * Understanding Height in CSS:
+     -> But if we set both height as well as the width, then the overflow happens vertically, so 
+	    in this case you can give min-height as given below:
+		.one{
+		  max-width: "500px";
+		  min-height: "300px";
+		}	
+     -> If we give min-height then if this exceeds 300 then the height will increse instead of 
+        overflow.
+     -> we can also use overflow property instead of min-height, but we will learn that in next 
+        videos. Btw, the default value of overflow: visible; 
+     -> we can also change it to overflow: hidden;	
+
+   ---------------------------------------------------------------------------------------------
+   * Use CSS Percentage Unit for width:	
+     -> we can also use the width: 50%; This will change and make the width to 50% of the parent 
+	    and not the viewport. So in this case the body element is the parent, and by default, the 
+		body has the width 100% according to the viewport. 
+     -> when we reduce the viewport to its last, then few words gets overflow from it, so we can 
+        use  word-break: break-all; which breaks the words.
+
+   ---------------------------------------------------------------------------------------------
+   * Understand Width in Percentage:
+     -> NOTE: The % takes the width from its parent instead of viewport.
+	    NOTE: Make sure to avoid using the width unit as px to the parent, instead use %.
+
+   ---------------------------------------------------------------------------------------------
+   * Understand Height in Percentage:
+     -> It is compulsory in height case , that the height should be given to the parent else it 
+	    won't take , but in case of width, if we don't give the width to the parent, still it takes
