@@ -25,7 +25,7 @@
 .one {
   background-color: aquamarine;
   width: 50%;   /* 400px*/
-  /* height: 50%; */
+  height: 50%;
 }
 .one-child {
   width: 50%;   /* 200px*/

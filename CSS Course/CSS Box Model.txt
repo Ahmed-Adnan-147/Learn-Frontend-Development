@@ -63,3 +63,12 @@
    * Understand Height in Percentage:
      -> It is compulsory in height case , that the height should be given to the parent else it 
 	    won't take , but in case of width, if we don't give the width to the parent, still it takes
+	    NOTE: if u give the height to the parent element then only it applies to its children else
+		      if u just give height to the child, then the height doesn't gets apply in case of %.
+	 -> the height which u give to the parent should be in absolute value i.e., in px, then it works
+	    for its child.
+		NOTE: the % height will only work if its parent has a height in absolute units which is px.
+	
+   ---------------------------------------------------------------------------------------------
+   * Introduction to Padding:
+     -> it gives space b/w the content and the border.
