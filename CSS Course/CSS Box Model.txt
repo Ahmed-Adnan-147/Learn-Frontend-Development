@@ -72,3 +72,10 @@
    ---------------------------------------------------------------------------------------------
    * Introduction to Padding:
      -> it gives space b/w the content and the border.
+	 -> The padding comes inside the containers width & height, if we add padding it affects the 
+	    height & width of the actual container, the height & width of the actual container gets 
+		increased if we add padding & border to the container. You can check this while hovering to
+		the element, in the UI , u will display.
+	 -> To overcome this issue, we give box-sizing: border-box; so this will reduce the width & 
+	    height of the actual container & adds the padding & border inside it.
+	 
