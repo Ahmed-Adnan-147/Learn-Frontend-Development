@@ -78,4 +78,39 @@
 		the element, in the UI , u will display.
 	 -> To overcome this issue, we give box-sizing: border-box; so this will reduce the width & 
 	    height of the actual container & adds the padding & border inside it.
-	 
+	 -> If we give border the element size gets increased, and the height width will also get 
+	    bigger.
+	
+   ---------------------------------------------------------------------------------------------
+   * What is the problem with "box-sizing":
+     -> Now the height & width has been increased to 450px width & 260 in height, so to overcome 
+	    this we use box-sizing: border-box; , it reduces the height & width if we give the padding 
+		& border to the element, the height will get increased and the width will get reduced.
+	 -> so the border-box will set the width inside the width given for the actual element.
+	 -> As the actual element content width exceeds or finishes, then it starts increasing the   
+	    actual height width again by increasing the width.
+		
+   ---------------------------------------------------------------------------------------------
+   * What is Universal selector in CSS:
+     -> So, whenever we start to build the project, we use universal selector and set the box-sizing
+	    to it. so, universal selector sets all the elements box-sizing to border-box.
+		
+   ---------------------------------------------------------------------------------------------
+   * What is margin in CSS:
+     -> The margin is not included in our elements width. It is added outside the width of the 
+	    actual element.
+	 -> margin doesn't affect the height & width of the actual element, because it is applied 
+	    outside the actual element/container.
+	 -> By default the body element has some margin, so we can given the margin as 0 to the body
+	    element.
+
+   ---------------------------------------------------------------------------------------------
+   * Understand border-radius in CSS:
+     -> we use this to round the elements corners.
+	 -> we can also make use of 50% border-radius so it becomes ellipse, to make it to circle, we
+	    give height & width to the container and then add 50% border-radius to it. So in this case
+		we need to give height to the container.
+		
+   ---------------------------------------------------------------------------------------------
+   -> We can also give negative margin to the container, it will get nearer instead of going far.
+   -> we can fit the image in a container which is a circle by giving overflow: hidden;
