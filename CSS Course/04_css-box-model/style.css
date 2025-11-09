@@ -36,6 +36,7 @@ body {
   margin: 40px;
   border: 4px solid;
   border-radius: 10px;
+  outline: 15px solid green;
   /* box-sizing: border-box; */
 }
 .one-child {
@@ -50,6 +51,7 @@ body {
   padding: 25px;
   margin: 40px;
   border: 8px solid hotpink;
+  outline: 15px solid green;
   border-radius: 50%;
 }
 .two img{
@@ -74,7 +76,8 @@ body {
   border: 8px solid hotpink;
   border-radius: 50%;
     overflow: hidden;
-  background-image: linear-gradient(to blue, skyblue, blueviolet);
+  /* background-image: linear-gradient(to skyblue, rgb(41, 187, 245), rgb(186, 124, 243)); */
+  background-image: linear-gradient(to top, red, yellow);
 
 }
 .three img{

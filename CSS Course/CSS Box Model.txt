@@ -89,6 +89,7 @@
 	 -> so the border-box will set the width inside the width given for the actual element.
 	 -> As the actual element content width exceeds or finishes, then it starts increasing the   
 	    actual height width again by increasing the width.
+	NOTE: the border-box: box-sizing; will make the element to its actual width & height as before.
 		
    ---------------------------------------------------------------------------------------------
    * What is Universal selector in CSS:
@@ -114,3 +115,32 @@
    ---------------------------------------------------------------------------------------------
    -> We can also give negative margin to the container, it will get nearer instead of going far.
    -> we can fit the image in a container which is a circle by giving overflow: hidden;
+   * outline in CSS:
+     -> it is similar to border, but it doesn't affect the width, I mean the outline overrides/
+        overlaps the other element.	
+___________________________________________________________________________________________________
+   * CSS BOX MODEL WITH INLINE ELEMENTS:
+     -> Inline elements prevents width & height having an effect to the element. It means the 
+	    manual height & width doesn't apply to the span kinda elements i.e., inline elements.
+	 -> By default the inline elements, height & width will be auto, according to the content in it.
+	 
+   ----------------------------------------------------------------------------------------------
+   * Understand Padding in CSS on Inline cs Block elements:
+	 -> If we give padding to the inline elements, it will reflect, and the height & width will also
+	    gets increased, but it will overlap other elements above and below it in height, but the 
+		block elements doesn't follow this.
+	 -> border also acts same like padding in the Inline elements.
+	 -> margin & outline also only acts same inline, not top & bottom.
+	 -> In conclusion, all the box model properties does not work for inline elements, it only 
+	    works in line, not top & bottom.
+	NOTE: content, padding, border will effect the original elements height/width, but margin & 
+	      outline doesn't effect the original element height/width.
+		  
+   ----------------------------------------------------------------------------------------------
+   * How Display Property Works in CSS:
+     -> If u want to anyhow apply the box model properties such as height, width, padding, border,
+	    margin to the inline elements, you can use the display property in which we can convert 
+		the inline element to the block element and then all the box model props will be applied 
+		to it.
+	 -> But the block element will not keep other element beside it, so we use display: inline-block
+	    so that the other inline elements can come beside the first inline element.
