@@ -144,3 +144,4 @@ ________________________________________________________________________________
 		to it.
 	 -> But the block element will not keep other element beside it, so we use display: inline-block
 	    so that the other inline elements can come beside the first inline element.
+	 -> Inline also consists of two, replaced inline & non-replaced inline elements.
