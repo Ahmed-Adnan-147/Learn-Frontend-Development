@@ -144,4 +144,29 @@ ________________________________________________________________________________
 		to it.
 	 -> But the block element will not keep other element beside it, so we use display: inline-block
 	    so that the other inline elements can come beside the first inline element.
+		
+   ----------------------------------------------------------------------------------------------
+   * Advantages of Inline-Block Display Property in CSS:  
+     -> Firstly, we can set the height, width, padding, border to the element and also pushes the 
+	    top-bottom content as well.
+	 -> Inline-block will add on the elements in the inline as well.
+	 -> It also acts/behaves as a box and block element when applied.
+	 
+   ----------------------------------------------------------------------------------------------
+   * Does Box-Model Fails for Inline Elements?
+     Categories of Inline:
+	   i) Replaced inline elements: (img, iframe, video)   
+	       -> Replaced means the elements content is replaced with the data, which is image in 
+		      case of <img> tag, that's why it is a replaced element, so now the height & width 
+			  is applied to this inline element, that's why we should either give height or width
+			  to the image element.
+	       -> the elements to whom the height and width is applied is called replaced elements.
+		   -> It basically works as inline-block.
+		   
+	  ii) non-replaced inline elements: (<b>, <a/>, <span>)
+	  
 	 -> Inline also consists of two, replaced inline & non-replaced inline elements.
+	 -> You can also embed the google.com in the iframe tag, just replace the src with the google 
+	    url.
+		
+     -> display:none; also hides the element. It works as hidden in html.

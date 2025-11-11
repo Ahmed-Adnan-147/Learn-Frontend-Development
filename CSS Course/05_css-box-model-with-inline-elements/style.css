@@ -1,7 +1,7 @@
 body {
   margin: 0;
 }
-p {
+/* p {
   background-color: greenyellow;
   width: 300px;
   height: 100px;
@@ -17,4 +17,40 @@ p {
   height: 200px;
   padding: 25px;
   border: 10px solid pink;
+} */
+
+
+/* span {
+  display: block;
+  background-color: cadetblue;
+  width: 60px;
+  height: 20px;
+  padding: 25px;
+  border: 10px solid pink;
+  margin: 10px;
+} */
+
+span {
+  background-color: antiquewhite;
+  display: inline-block;
+  margin: 10px;
+  width: 60px;
+  height: 20px;
+  padding: 25px;
+  border: 10px solid sandybrown;
+}
+
+img {
+  background-color: cadetblue;
+  height: 350px;
+  width: 300px;
+  padding: 25px;
+  border: 10px solid sandybrown;
+  margin: 10px;
+  /* display: inline-block; */
+}
+
+iframe {
+  width: 500px;
+  height: 300px;
 }
