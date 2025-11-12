@@ -1,0 +1,31 @@
+ * CSS UNITS: 
+   -> If we add a div with the box named class and write I am Adnan in it.
+   
+   -> How does max-width solves Overflow issues?
+   -> The difference b/w width & max-width is that , when you give width to the element, and then 
+      reduce the element viewport from the given width, the element will be overflow and the 
+	  scroller will be added, but whereas, in max-width the overflow will not happen, when we
+	  reduce the viewport, the width of the element will also decrease at the same time.
+	  By default, the element width will be 100% of the viewport.
+   ---------------------------------------------------------------------------------------------
+   * Understand Width & Height in Percentage:
+     -> Whenever we give width in % percentage, it will take the width of its parent and then
+	    decide what width to be applied.
+	 -> But the height in % doesn't work, we need to apply height in pixels. It will work only if
+	    u give the absolute units.
+     -> when we apply height to the child element in absolute units, it will also affect the
+	    parents heights, it will also gets changed.
+
+   ---------------------------------------------------------------------------------------------
+   * Experiment with Padding in Pixel vs Padding in Percentage:
+     -> You can apply padding in % as well, again it will calculate according to its parent element
+	 -> But the main element width size gets changed, so we apply border-box:box-sizing; to it.
+	 -> When we give padding in %, it will calculate from its parent.
+		
+   ---------------------------------------------------------------------------------------------
+   * MAIN POINTS TO REMEMBER:
+     -> When we apply % to the width, it will take the parents width from there it will set.
+	 -> If u try to give % in height, it won't apply, even if it is a block level element, bcoz,
+	    the height should be given in pixels, not in %.
+	 -> when we apply height to the child element in absolute units, it will also affect the
+	    parents heights, it will also gets changed.

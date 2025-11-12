@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+section {
+  /* width: 50%; */
+  width: 400px;
+  /* height: 500px; */
+  background-color: blueviolet;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.box {
+  background-color: chartreuse;
+  /* max-width: 500px; */
+  width: 50%;
+
+}
