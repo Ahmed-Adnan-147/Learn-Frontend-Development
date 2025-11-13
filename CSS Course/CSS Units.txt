@@ -21,6 +21,14 @@
      -> You can apply padding in % as well, again it will calculate according to its parent element
 	 -> But the main element width size gets changed, so we apply border-box:box-sizing; to it.
 	 -> When we give padding in %, it will calculate from its parent.
+	 -> Margin also works the same way, but the border doesn't work. Border will display as invalid
+	    property.
+	
+   ---------------------------------------------------------------------------------------------
+   * Experiment with font-size:
+     -> The original font-size will be 16px which is 1em, you can look this in Computed of the 
+	    selected element and then check the Show all filter and can see it.
+	 -> So, when we give 200% font-size to the element, then it will be 32 px.
 		
    ---------------------------------------------------------------------------------------------
    * MAIN POINTS TO REMEMBER:
