@@ -29,6 +29,16 @@
      -> The original font-size will be 16px which is 1em, you can look this in Computed of the 
 	    selected element and then check the Show all filter and can see it.
 	 -> So, when we give 200% font-size to the element, then it will be 32 px.
+	 
+   ---------------------------------------------------------------------------------------------
+   * Understand Viewport Width in Depth:
+     -> the width will be taken from viewport, it means the browsers width will be taken and 
+	    calculated. It doesn't take from body or html element, it takes the browsers viewport i.e,
+		the laptop or desktop full screen width will be considered as viewport.
+	 -> You can check the browsers viewport by going to mobile responsive in dev tools, that will
+	    be the exact viewport of the browser, and you can check there by giving the body width as
+		600px, then also the element width will not be 300, instead it will take from the browsers
+		viewport.
 		
    ---------------------------------------------------------------------------------------------
    * MAIN POINTS TO REMEMBER:
@@ -37,3 +47,6 @@
 	    the height should be given in pixels, not in %.
 	 -> when we apply height to the child element in absolute units, it will also affect the
 	    parents heights, it will also gets changed.
+	 -> Never ever give margin & padding in %, it creates so many issues.
+	 -> Best Practice is not to give height to the elements, as the height will be handled by the 
+	    browser accurately.

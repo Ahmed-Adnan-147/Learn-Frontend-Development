@@ -3,23 +3,25 @@ body {
 }
 
 section {
-  /* width: 50%; */
-  width: 400px;
-  /* height: 500px; */
   background-color: blueviolet;
-  /* padding: 25px; */
-  padding: 10%;
-  font-size: 200%;
+  width: 50vh;
 
+  /* width: 400px;
+  padding: 10%;
+  font-size: 200%; */
+
+  /* width: 50%; */
+  /* height: 500px; */
+  /* padding: 25px; */
   /* box-sizing: border-box; */
 }
 .box {
   background-color: chartreuse;
-  /* max-width: 500px; */
   width: 50%;
-  padding: 10%;
-  margin: 10%;
-  font-size: 50%;
-
-
+  padding: 24px;
+  
+  /* padding: 10%;
+  margin: 10%; */
+  /* max-width: 500px; */
+  /* font-size: 50%; */
 }
