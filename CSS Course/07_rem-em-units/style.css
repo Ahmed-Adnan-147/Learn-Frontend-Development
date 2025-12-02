@@ -1,0 +1,42 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* em code */
+/* section {
+  background-color: blueviolet;
+  width: 50vw;
+  padding: 10vw;
+  margin: 10vw;
+  border: 1vw solid saddlebrown;
+  font-size: 2em;
+}
+.box {
+  background-color: chartreuse;
+  box-sizing: border-box;
+  width: 5em;
+  font-size: 2em;
+  padding: 0.5em;
+} */
+
+/* rem code */
+section {
+  background-color: blueviolet;
+  width: 50vw;
+  /* height: 50vh;  */
+  padding: 10vw;
+  margin: 10vw;
+  border: 1vw solid saddlebrown;
+  font-size: 2rem;
+}
+.box {
+  background-color: chartreuse;
+  width: 5rem;
+  font-size: 2rem;
+  padding: 0.5em;
+}

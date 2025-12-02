@@ -1,0 +1,63 @@
+ * Rem & em Explained in Depth:
+   -> These two units are mostly used in our websites. Normally, we use this units for font-size,
+      we can also use this units for other elements to give height, width, padding, margin as well.
+   -> As we know that the div/span/headings etc have the font-size as 16px from the browser by 
+      default. But its actually 1em instead of 16px by default.
+
+   ---------------------------------------------------------------------------------------------
+   * What is "em" Unit in CSS:
+     -> First you go and check in the Computed by checking Showall & Group checboxes and then type
+        font-size, the default will be 16px, which is basically the 1em actually.
+     -> We already know that font-size will inherit from its parent, if we give 2em to the parent
+        the child will also be 2em which is 32px.
+    NOTE: Its not that 1em is 16px. For eg, if we give the section element a font-size of 2em, this
+          is 2em for the section element, but when we go to inside div element of section element,
+          it inherits and the div will have the font-size of 32px, which is 1em for div element.
+
+   ---------------------------------------------------------------------------------------------
+   * How "em" Actually works:
+     -> See, when we give font-size as 2em to the section element, that means it is not 32px. So,
+	    now the box font-size will be 32px for 1em, and we have given 2em for box, so it will be
+		64px font-size. 
+	 -> When we now give the width as 10em, so the width will now be 640px for the box, because
+	    it will calculate from its own element font-size as given below:
+	NOTE: here the box font-size is 1em=32px, but as we have given the font-size as 2em so, it has
+	      become 1em=64px for width now, but the font-size is 32px for 1em. When we are giving 
+		  width then 1em=64px, when we are giving font-size then 1em=32px, this is the tricky one.
+		  em property depends on its font-size property.
+     -> If we remove font-size property from box, then this will give the box width as 32px then.
+	 -> So, basically whatever we see the font-size in computed tab, that will be the 1em of that
+	    particular element except till you set its font-size property
+		
+        section {
+		  background-color: blueviolet;
+		  width: 50vw;
+		  padding: 10vw;
+		  margin: 10vw;
+		  border: 1vw solid saddlebrown;
+		  font-size: 2em;
+		}
+		.box {
+		  background-color: chartreuse;
+		  /* width: 50%; */
+		  padding: 24px;
+		  box-sizing: border-box;
+		  width: 10em;
+		  font-size: 2em;
+		}	 
+		
+   ---------------------------------------------------------------------------------------------
+   * Where can we use "em" Units in CSS:
+     -> we can use it in padding as well, by the way you can also give the font-size as 2em to the
+	    body, then see everything will be doubled, but the box will now also take its parent value
+		and calculate its own font-size or width accordingly.
+
+   ---------------------------------------------------------------------------------------------
+   * What is "rem" Unit in CSS:
+     -> It is easy when compared to em, so rem is also 16px by default. 
+	 -> The main difference b/w em & rem is , rem doesn't see the parent font-size rather it sees 
+	    the html font-size and then calculate accordingly. Basically, it calculates its font-size
+		from the root element font-size.
+	 -> Whatever font-size is set to the root element, it will be fix in the whole document.
+	 -> By the way, in every element, the rem will be 16px only, as it is not taking from font-size.
+	 

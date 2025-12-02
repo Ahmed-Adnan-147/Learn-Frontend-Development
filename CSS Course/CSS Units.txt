@@ -39,6 +39,28 @@
 	    be the exact viewport of the browser, and you can check there by giving the body width as
 		600px, then also the element width will not be 300, instead it will take from the browsers
 		viewport.
+	 -> we have section whose width we have given as 50vw, we also have a div inside that section
+	    element, we have given that div a width of 50%, so this takes the width from the parent &
+		then calculate, so it will be half the width of the parent, but the padding is taking more
+		width and its more than half of the parents width, so here we use box-sizing: border-box, 
+		so that the padding and everything will be managed in the half width.
+	 -> If we reduce the width of the body to 500px and then check the section element width, it 
+	    will not get 50vw from body, it will directly take from browser and then calculate its 
+		width.
+   ---------------------------------------------------------------------------------------------
+   * Understand Viewport Height in Depth:
+     -> we can also give width as 50vh, so when we change the browser height, it gets calculated 
+	    from that. However, when we change the width of the viewport, it won't effect the width 
+		bcoz we have given the width as 50vh.
+	 -> But we should avoid giving height, because it creates problems. we should leave the height
+	    to the browser, it decides well.
+		
+   ---------------------------------------------------------------------------------------------
+   * Experiment with font-size in "vw":
+     -> our actual font is in the div, but we have given the font-size as 10vw in section element,
+	    still it works because it inherits the font-size of the parent.
+	 -> but we usually don't use font-size directly, we can use it by giving min font-size or 
+	    something, we will see this is upcoming videos.
 		
    ---------------------------------------------------------------------------------------------
    * MAIN POINTS TO REMEMBER:
@@ -50,3 +72,5 @@
 	 -> Never ever give margin & padding in %, it creates so many issues.
 	 -> Best Practice is not to give height to the elements, as the height will be handled by the 
 	    browser accurately.
+	 -> By using viewport height & width, we can set anything such as padding, margin, font-size,
+	    border etc.
