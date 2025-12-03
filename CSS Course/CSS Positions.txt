@@ -1,0 +1,55 @@
+ * CSS Positions: Static, Relative, Absolute, Fixed, Sticky:
+   -> By default, the position property will be static for all the elements. You can check this in 
+      Computed and type position.
+   
+   ---------------------------------------------------------------------------------------------
+   * Position Relative Explained in Depth:
+     -> If we add the position as relative to a div, then nothing has changed in the UI, but in 
+	    box-model we've got another layer of position, as you can see it in the styles. It is 
+		nothing that helpful.
+	 -> we can give 4 subproperties to the relative, which is top, right, bottom, left.
+	 -> If we give top property as 5px, it goes away 5px from top, similarly if we apply any of the
+	    4 subproperties, it will go away opposite side.
+	NOTE: One thing to know that in relative, when we give both top & bottom as 10px, then it will
+	      go with top, similarly, if we give left & right, then it prefers left.
+	NOTE: The relative property top, bottom, left, right is applied according to the elements 
+	      place only.
+	 -> These subproperties doesn't work for the sticky property.
+
+   ---------------------------------------------------------------------------------------------
+   * Inset Property in position Relative:
+     -> It applies all the four sides, it is basically the short hand property for top, bottom,
+	    left & right.
+
+   ---------------------------------------------------------------------------------------------
+   * Unset Property in position Relative:
+     -> This will default the element position, which is sticky.
+	    position: unset;
+
+   ---------------------------------------------------------------------------------------------
+   * Position Absolute Explained in Depth:
+     -> This is mostly used property. when we apply position: absolute; to any element, it will 
+	    loose its space i.e., height & width, but will display iteself, basically it floats above 
+		in the air & the below element will take up this absolute elements space.
+	 -> we can also use the subproperties in absolute as well, but the main difference b/w relative
+	    & absolute subproperties is that, the absolute subproperties works according to the 
+		viewport, if we apply top as 5px, so this element will go on top of the screen with 5px 
+		away.
+	NOTE: For absolute, if we give top&bottom, both also works and it gets stretch from top to 
+	bottom. Also, for left to right also it works for both.
+	
+   ---------------------------------------------------------------------------------------------
+   * Attach Absolute Positioned Element with Parent:
+     -> If we apply relative to the parent and absolute to the child element, then the top, bottom
+	    works according to the parent height & width instead of viewport.
+	 -> Now, it moves around inside its parent height width, and when we give the subproperties to
+	    the parent, then the absolute will be inside the parent as it is attached to the parent, so 
+		the parent will move now, and the absolute will be under parent instead of viewport.
+	NOTE: when we take ex of ul & li, if we give absolute to li, it is attached to viewport, but nothing
+	attached to the parent, but if u want it to be attached to the parent, then we should give 
+	position as relative to the parent, so the child will be related to its parent now. But if the 
+	parent doesn't have relative, but the granparent have the relative, so this element li gets 
+	attached to its grandparent still, instead of viewport.
+	
+		  
+    
