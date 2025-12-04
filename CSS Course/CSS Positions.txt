@@ -45,11 +45,63 @@
 	 -> Now, it moves around inside its parent height width, and when we give the subproperties to
 	    the parent, then the absolute will be inside the parent as it is attached to the parent, so 
 		the parent will move now, and the absolute will be under parent instead of viewport.
-	NOTE: when we take ex of ul & li, if we give absolute to li, it is attached to viewport, but nothing
-	attached to the parent, but if u want it to be attached to the parent, then we should give 
-	position as relative to the parent, so the child will be related to its parent now. But if the 
-	parent doesn't have relative, but the granparent have the relative, so this element li gets 
-	attached to its grandparent still, instead of viewport.
+	NOTE: when we take ex of ul & li, if we give absolute to li, it is attached to viewport, but 
+	nothing attached to the parent, but if u want it to be attached to the parent, then we should 
+	give position as relative to the parent, so the child will be related to its parent now. But if
+	the parent doesn't have relative, but the granparent have the relative, so this element li 
+	gets attached to its grandparent still, instead of viewport.
+	 -> If the body is given position as relative, then the li with absolute position will be 
+	    attached to the body now, when we give margin or something to the body, it will move around
+		with the body, and if we remove relative from body, then this li element with absolute will
+		be attached to the viewport again.
 	
+	NOTE: If any of the parent above this child has the property other than static, then it will 
+	be attached to that parent, else if will get attached to the viewport. Make sure it will attached
+	to its immediate parent to get itself attached.
+	
+	NOTE: As we are saying that if we give relative to the parent, then the child will be attached 
+	to the parent, thats true, but if we give the top property as more px, then it will come outside
+	of the parent height width, but it will still be attached to the parent only, you can check it
+	by giving margin to the parent.
+	- Absolute behaves in two ways: 
+	  i) it will attach to the parent.
+	  ii) it will also attach to the viewport.
+	
+   ---------------------------------------------------------------------------------------------
+   * Position Fixed Explained in Depth:
+     -> The position fixed is almost 99% same as absolute, but the only difference is that, we 
+	    cannot attach it to the parent, it will always be attached to the viewport only.
+	 -> When we apply position as fixed to any element, it will also loosen its height and width &
+	    comes out of its parent.It means it will get removed, but still stays, means its floating. 
+		So, when we bring another absolute element to this both will get displayed as both are 
+		floating on one another.
+	 -> Now, you can check by giving position relative to the parent, but this has been attached 
+	    to the viewport only, it is not attached to its parent.
+
+   ---------------------------------------------------------------------------------------------
+   * Position Sticky Explained in Depth:
+     -> It behaves like position relative, as when we give relative also there is no change 
+	    immediately, same thing happens with sticky as well. Whereas, when we give position as 
+		absolute or fixed, it will remove itself from the parent and gets out from the normal 
+		document flow.
+	 -> So the sticky & relative doesn't make us feel like it got deleted. but in absolute & fixed
+	    case, it make use feel as if it has been deleted or loosen its space.
+	
+	NOTE: When we give subproperties to the relative property, it will move itself, but at the 
+	same time it will be attached to its parent. But in sticky case, when we give subproperties,
+	it won't work until we have height width along with scrollbar in the parent element. 
+	- this will never go outside the parent, I mean it won't go outside the parents height & width.
+	If the parent height is very less, then the subproperties doesn't work there as well until we 
+	have a scrollbar
+	 
+	 -> We use overflow:scroll to give scroller to the parent, we can also use overflow-y:scroll;
+	    to give only vertical scroller.
+	 -> If we don't give overflow property in parent and try to give top in the sticky element,
+	    and now the parent element we have given the margin-top as -100px and then keep on 
+		increasing it, then the element will get attached to the viewport and the top25px is 
+		added from the viewport when the parent reaches to the top.
+	 -> we basically use it to make navigations.
+	 -> if overflow is in the parent or grandparent, it will get attached to it instead of the  
+	    viewport.
 		  
     
