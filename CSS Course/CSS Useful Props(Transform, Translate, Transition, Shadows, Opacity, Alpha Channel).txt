@@ -1,0 +1,46 @@
+  * CSS Useful Properties: Transform, Translate, Transition, Shadows, Opacity, Alpha channel:
+    -> These are very useful and most commonly used properties in CSS.
+	-> lets create a div with class box, and give height & width to 100px ang bg color as green.
+
+   ---------------------------------------------------------------------------------------------
+   * What is "transform" property in CSS?
+   
+     - What is "transform: scale();" in CSS?
+	   -> This basically scales up the div, but will not scale its height & width, the height &
+          will be same, but still the div will become big from the center.
+	   -> By default the scale will be 1, "transform: scale(1)". You can increase or decrease the
+	      value. It acts like a lens, when we see any element with lens, how it gets increased. So,
+		  the inside content will also gets scaled when we apply this property to the element.
+	   -> If there is any other element after this div, it won't take its space while scaling, 
+	      rather it will come up, like float on the other element. Basically, it doesn't take 
+		  extra space.
+	   NOTE: It won't effect the position of other elements.
+		  
+	 - What is "transform-origin" in CSS?
+	   -> Basically when we give transform scale, the box is getting increased from the center, if
+	      we give transform-origin as well, then it grows itself from the top-left of the box, I 
+		  mean the top-left corner will not move itself.
+	   -> If we want to grow the box from right-bottom, then we give transform-origin as 100% 100%.
+		  
+   ---------------------------------------------------------------------------------------------
+   * How to implement Transparency Using Alpha Channel?
+     -> As we have given the bg color as green, if I want to make this div transparent, we use 
+	    alpha channel, which is rgba() where "a" refers to alpha channel. It makes the box or 
+		element transparent.
+	 -> The alpha channel starts from 1 to 0, when we reduce the alpha, it slowly becomes 
+	    transparent, so when the background becomes transparent, then we will be able to see the 
+		other elements content, which was hidden under by this transform scale.
+	 -> As we reduce the alpha channel, the transparency increase and it becomes more transparent.
+	 -> If we set the alpha channel to 1, it won't affect the original color, and if we set it to 
+	    0 then it will totally become transparent, which is white.
+	 -> Transparency also works with hex values as well, it will add two more digits in it and 
+	    becomes 8 digit value.
+		
+   ---------------------------------------------------------------------------------------------
+   * Understand "opacity" Property in CSS:
+     -> It is exactly the same as alpha channel, like it also starts from 1 to 0.
+	 -> We can also make the background transparent by giving opacity. But there is one difference
+	    b/w alpha channel & opacity.
+	 -> The main difference b/w opacity & alpha channel is: the alpha channel only makes the 
+	    background as transparent, but opacity makes the background as well as the content or image
+		or whatever is inside that box as transparent.
