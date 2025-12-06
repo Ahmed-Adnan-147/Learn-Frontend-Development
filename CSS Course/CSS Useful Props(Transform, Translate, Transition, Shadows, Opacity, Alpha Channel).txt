@@ -44,3 +44,46 @@
 	 -> The main difference b/w opacity & alpha channel is: the alpha channel only makes the 
 	    background as transparent, but opacity makes the background as well as the content or image
 		or whatever is inside that box as transparent.
+		
+   ---------------------------------------------------------------------------------------------
+   * Understand "transform: rotate();" in CSS:
+     -> transform basically means that we can transform the actual element to something, like scale,
+	    rotate or translate.
+	 -> So, the "transform: rotate(45deg);" takes the value in degrees and rotates the actual 
+	    element. We can also give negative value to make it rotate in the opposite direction.
+		
+   ---------------------------------------------------------------------------------------------
+   * Understand "transform: translate();" Property in CSS: 
+     -> We mostly use translate in real time. It is a shortcut property, it has two properties.
+	 -> We will have translateX & translateY. If we give translateX as 100px, then the element 
+	    moves 100px to the right horizontally, similarly it also moves vertically if we give 
+		translateY to it.
+	 -> It behaves like a margin, but its not actually a margin, because the margin pushes the 
+	    content of other elements, but the translate doesn't push the content, rather it just 
+		overlaps other elements.
+	 -> We can also give the value in %, so it will move that much percentage from its actual 
+	    height or width.
+	
+	NOTE: we call also use multiple properties in transform such as:
+	      transform: translate(-50%, -50%) rotate(45deg) scale(1.5);
+		
+   ---------------------------------------------------------------------------------------------
+   * Understand "box-shadow" Property in CSS:
+     -> box shadow is used to give the shadow to the div or the box and make it a bit popped up.
+	 -> box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+	 -> Basically, first is the x-direction shadow, 2nd is y-direction shadow, 3 is the blur radius
+   	    to blur the color and then rgba to give color and transparency.
+	 -> We also have 4th which will be spread radius, it spreads on all the four sides.
+	
+   ---------------------------------------------------------------------------------------------
+   * Understand "text-shadow" Property in CSS:
+     -> text-shadow is used to give shadow to the text or content.
+	 -> This has text-shadow: 2px 2px 2px #ff0000;
+	 -> 1st 2px is the x-direction and 2nd 2px is the y-direction, 3rd 2px will be blur radius.
+	 -> It doesn't accept spread radius.
+	 -> Instead of giving text-shadow to the text, we can also give it to the box as well, as the 
+	    text property will be inherited from the parent.
+		
+   ---------------------------------------------------------------------------------------------
+   * Understand "background" Property in CSS:
+     -> 
