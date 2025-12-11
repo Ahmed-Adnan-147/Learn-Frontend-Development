@@ -86,4 +86,44 @@
 		
    ---------------------------------------------------------------------------------------------
    * Understand "background" Property in CSS:
-     -> 
+     -> Till now we have used background-color property to give background color to the element, 
+	    we can also give only background property as well. You can see, in the dev tools, that 
+		in background we have multiple different sub properties which can be used, such as, 
+		background-image, background-size, background-repeat & background-color which we already
+		use everytime.
+	
+	NOTE: If you only want to set color, never give background property to it, instead use 
+	      background-color only. Otherwise, when we use background to set the color, then it will
+		  set all the properties as initial.
+	 -> we give background-image as background-image: url(''), you can give url under quotes, or 
+	    without quotes as well. we have taken the image address from the unsplash, so here we are
+		unable to see full image, rather its only displaying the starting part of the image.
+	 -> If we want to display full image, then we use background-size as auto or contain or cover.
+	    By default it will be auto, which means that, if the original image size is 600 X 300 which
+		you can see in the elements by hovering to the image link, so it will take only 300X150 as
+		the size of our div is this much only
+	 -> So, in order to display the full image, we use background-size as contain, there is one
+	    drawback with contain, it will display full image but then again it starts showing from
+		starting, so we can fix this by using background-repeat: no-repeat; , but then instead of
+		background-image, it displays the background-color which was set to it.
+	 -> So, to overcome these issues, we use background-size as cover to display the maximum part
+  	    of the image, I mean almost full image.
+	 -> We can also give background-position-x to move the image or y to move it in y-direction.
+	
+	NOTE: if we give background-position, background-repeat, background-size etc and then give 
+	      background: pink, instead of background-color: pink, this is set all the properties to
+		  initial and will not work any property.
+		  
+   ---------------------------------------------------------------------------------------------
+   * Understand "transition" Property in CSS:
+     -> now we are rotating the div image on hover, but it is getting hovered very roughly and 
+	    very immediately, so inorder to make it smooth hover we use transition property to make 
+		hover animate smoothly.
+	 -> So, we can apply, transition: all 200ms; 
+	 -> "all" means it will animate all the property to animate, you can also give tranform 200ms, 
+	    now the transition property will animate on hover.
+	 -> By the way, giving all is not the best practice.
+	 -> We can animate any property by giving transition, we can also give 
+	    transition: background-color 500ms;
+	
+	Note: few properties are not animatable. Most of them are animatable.
