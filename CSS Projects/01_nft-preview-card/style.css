@@ -1,0 +1,66 @@
+body {
+  background-color: #0D1A2D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nft-card {
+  height: 580px;
+  width: 320px;
+  background-color: #15273F;
+  border-radius: 15px;
+  padding: 25px;
+
+  position: absolute;
+  inset: 0;
+  margin: auto;
+
+  /* box-shadow: 10px 10px 30px 20px rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2); */
+
+/* box-shadow: 0px 8px 0px white, 
+        -10px 8px 0px white, 10px 8px 0px white; */
+
+  /* all four sides shadow */
+  /* box-shadow: 0 0 5px 10px #fff; */
+
+box-shadow: -15px 25px 15px 10px rgba(0, 0, 0, 0.2),
+	          15px 25px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h2 {
+  color: white;
+}
+
+.description {
+  color: #768AAD;
+  font-size: 20px;
+}
+
+.units {
+  background-color: bisque;
+  width: 100%;
+}
+.left-sec {
+  display: flex;
+  align-items: center
+}
+.left-sec img {
+  height: 20px;
+  width: 15px;
+  display: flex;
+}
+
+.right-sec {
+  display: flex;
+  align-items: center
+}
+.right-sec img {
+  height: 20px;
+  width: 15px;
+  display: flex;
+}
