@@ -26,3 +26,16 @@ h1 {
 .hashtag-header span {
   font-size: 2rem;
 }
+
+.hashtag-header img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 5px solid white;
+  vertical-align: middle;
+}
+
+/* Adjacent sibling selector -> this will select all the selectors except first selector. */
+img + img {
+  margin-left: -1rem;
+}
