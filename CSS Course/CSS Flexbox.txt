@@ -1,0 +1,50 @@
+ * FLEXBOX IN CSS:
+   -> Flexbox is used to make layouts. 
+   -> Flexbox is basically used to flex the screen to multiple parts. To implement it, we give
+      display:flex; to the parent element.
+   ---------------------------------------------------------------------------------------------
+   * Max-Content & Min-Content Width:
+     -> Before using flexbox, when we give width to the p tag in div, and give the width as 
+        max-content to the p tag, then it will bind all the content in one line along with the 
+	    horizontal scroller added to it, and it exceeds the div width as well, it will basically 
+	    overflow its width horizontally, and if we give the width as min-content to the p tag, it 
+	    will reduce the width to its possible extent, and scroller gets added vertically. 
+		
+   ---------------------------------------------------------------------------------------------
+   * Make an element a Flexbox:
+     -> It makes our element into flexbox. The whole content will come in only one line.
+	 -> As we have given the display: flex; to the parent element div, so the span, p, a tags will
+	    become as display block, all of them.
+	 -> Basically, it has come up as display block, but it is not the actual display block, when
+	    we apply the display property as flex, then it becomes flex container, and all the elements
+		will be flex items, inside the parent.
+	NOTE: So, now the elements has become block, we can now set the width as well, before, we 
+	      were'nt able to set the width as the span & a tags are the inline elements, but now we 
+		  can set the width as well.
+	 -> But when we set the width, if we give the width to all the elements inside the parent 
+	    element, its not able to see the exact width we have given it, the width is getting 
+		exceeded with the actual provided width & height, so we use box-sizing as border-box, so 
+		it will display the exact dimensions of the element, by adding the paddings, margins, 
+		borders in it, and reduces its content dimensions, so that if comes to its actual units.
+	 -> If we want to apply the property to its direct child we apply as .parent > span, here in 
+	    this case there are 3 direct childs, span, p, a tag, else it will apply to all the spans 
+		inside the parent, which is descendants.
+	NOTE: use Mozilla Firefox, as it shows all the things of a flexbox in dev tools, the chrome 
+	      doesn't shows up all the things in the dev tools.
+
+   ---------------------------------------------------------------------------------------------
+   * Installing Mozilla Firefox:
+     -> Flexbox gets created after the paddings & margins, borders etc.
+	 
+   ---------------------------------------------------------------------------------------------
+   * Understand How Flexbox Shrinks Elements:
+     -> Here, span & a tag is taking full height, but p tag is leaving some space on top & bottom,
+	    as p tag has some default margin to it. So, we remove that margin.
+	 -> Now, when we give width to all the elements, so it will take that width, but if we try to
+	    reduce the browser width, then all the elements will reduce equally in width, for eg. if 
+		we have given 400px width to two elements and 200px to one element, then if we reduce the 
+		screen size, to 10%, so from all elements only 10% will get reduced, such as 40px for 2
+		elements and 20px will be reduced from one element.
+	NOTE: If we give flex-shrink as 0 to any element, it won't effect that element, I mean the 
+	      shrink doesn't apply to that element.
+    NOTE: If we remove the width from all the elements, we won't find the empty space in this case.
