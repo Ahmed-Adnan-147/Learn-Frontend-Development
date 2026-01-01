@@ -48,3 +48,51 @@
 	NOTE: If we give flex-shrink as 0 to any element, it won't effect that element, I mean the 
 	      shrink doesn't apply to that element.
     NOTE: If we remove the width from all the elements, we won't find the empty space in this case.
+	      It will display the width based on the content it has will be calculated in one line, and
+		  that width will get displayed.
+    NOTE: There are two types of sizes if you see in firefox, Content size & the Base size, so the
+	      Base Size is the width given by user, and the Content size, is the size when the browser
+		  make the content in one line, and whatever the size we get is the content size. You can 
+		  check this by removing the display flex from parent and also by giving width as max-width
+		  to the paragraph.
+	NOTE: The element gets shrink till the bigger content word in it is exceeded. So, it reaches 
+	      that much min-width and stops shrinking itself after that.
+		  
+   ---------------------------------------------------------------------------------------------
+   * Flex Shrink Property:
+     -> If you don't want any element to get shrink when we reduce the browser width, we give
+	    flex-shrink property as 0 in that element styling.
+	 -> If you do not want any element to get shrink, the best is the flex-shrink, otherwise, 
+	    you may also give max-width to that element, so it won't lessen the width now. But try 
+		to use flex-shrink and not min-width.
+		
+   ---------------------------------------------------------------------------------------------
+   * Flex Grow Property:	
+     -> By default, it will be 0. when we do flex-grow as 1, then it grows itself when it gets extra
+	    space, otherwise it won't grow. We mostly don't use this property.
+	NOTE: When we give flex-grow as 1 to any element, it grows itself according to the available 
+	      space, but also it grows equally from the available space, except the content size. It
+		  won't apply according to the content size.
+     -> When we give any width to the element, and apply flex-grow, it will exceed its actual width.
+
+   ---------------------------------------------------------------------------------------------
+   * Justify Content Property:
+     -> This property is used to center or change the elements place horizontally.
+	 -> center, space-between, space-around, space-evenly.
+	 
+   ---------------------------------------------------------------------------------------------
+   * Align Items Property:
+     -> It is used to change the elements place vertically.
+	 -> the values are stretch, flex-start, flex-end, center.
+	 
+   ---------------------------------------------------------------------------------------------
+   * Flex-direction Row & Row-reverse:
+     -> we can reverse the row and column as well.
+	 
+   ---------------------------------------------------------------------------------------------
+   * Understand Flexbox by flex-direction column:
+     -> When we give direction as column, then the height will effect, I mean the height changes
+	    and the width remain same, as in direction row, the width used to change, and the height
+		use to remain same.
+	NOTE: When we apply align-items center, now it works horizontally as the flex-direction is 
+	      column.
