@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  padding: 10px;
+  /* border: 4px solid indianred; */
+  display: flex;
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* height: 50vh; */
+  /* align-items: center; */
+
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .parent > span { */
+.parent span {
+  /* border: 4px solid cadetblue; */
+  background-color: cadetblue;
+  /* width: 200px;
+  height: 300px; */
+  /* flex-shrink: 0; */
+}
+
+.parent p {
+  /* border: 4px solid darkkhaki; */
+  background-color: darkkhaki;
+  /* width: max-content; */
+  /* width: min-content; */
+  /* width: 400px; */
+  /* height: 300px; */
+  /* flex-shrink: 0; */
+  margin: 0;
+}
+
+.parent a {
+  /* border: 4px solid yellowgreen; */
+  background-color: yellowgreen;
+  /* flex-shrink: 0; */
+  /* width: 400px; */
+  /* height: 300px; */
+}
+

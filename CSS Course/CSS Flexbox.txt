@@ -1,4 +1,4 @@
- * FLEXBOX IN CSS:
+ * FLEXBOX IN CSS (Part-1):
    -> Flexbox is used to make layouts. 
    -> Flexbox is basically used to flex the screen to multiple parts. To implement it, we give
       display:flex; to the parent element.
@@ -96,3 +96,7 @@
 		use to remain same.
 	NOTE: When we apply align-items center, now it works horizontally as the flex-direction is 
 	      column.
+		  
+___________________________________________________________________________________________________
+   * FLEXBOX IN CSS (Part-2 Advanced):
+     -> 
