@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* .orange-card {
+  background-color: #E28525;
+}
+.orange-card h2 {
+  color: #FEF2E9;
+}
+.orange-card p {
+  color: #FFD69B;
+}
+.orange-card a {
+  color: #CBA678;
+} */
+
+
+.cards-container {
+  color: white;
+  padding: 1rem;
+}
+a {
+  color: inherit;
+}
+.orange-card {
+  background-color: #E28525;
+}
+.cyan-card {
+  background-color: #016972;
+}
+.green-card {
+  background-color: #00403F;
+}
+h2 {
+  text-transform: uppercase;
+}
