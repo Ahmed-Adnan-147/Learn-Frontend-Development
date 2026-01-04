@@ -1,37 +1,58 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  font-family: "Lexend Deca", sans-serif;
 }
-/* .orange-card {
-  background-color: #E28525;
+a {
+  /* color: inherit; */
+  text-decoration: none;
 }
-.orange-card h2 {
-  color: #FEF2E9;
-}
-.orange-card p {
-  color: #FFD69B;
-}
-.orange-card a {
-  color: #CBA678;
-} */
-
 
 .cards-container {
   color: white;
   padding: 1rem;
+  border-radius: 10px;
 }
-a {
-  color: inherit;
+.card {
+  padding: 3rem;
+}
+.card a {
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 2em;
+  /* the margin doesn't work as this is an inline element, so width, height etc won't work for inline elements. So, we can make this element inline-block, so that it works, the margin works. */
+  display: inline-block;
+  margin-top: 3rem;
+}
+.card h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 2.5rem;
+}
+.card p {
+  opacity: 0.7;
+  line-height: 1.75;
 }
 .orange-card {
   background-color: #E28525;
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
+  border-radius: 8px 8px 0 0;
+}
+.orange-card a {
+  color: #E28525;
 }
 .cyan-card {
   background-color: #016972;
 }
+.cyan-card a {
+  color: #016972;
+}
 .green-card {
   background-color: #00403F;
+  /* border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; */
+  border-radius: 0 0 8px 8px;
 }
-h2 {
-  text-transform: uppercase;
+.green-card a {
+  color: #00403F;
 }
