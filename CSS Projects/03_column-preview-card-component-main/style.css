@@ -10,6 +10,12 @@ a {
   /* color: inherit; */
   text-decoration: none;
 }
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .cards-container {
   color: white;
@@ -19,7 +25,8 @@ a {
   /* background-color: brown; */
   overflow: hidden;
   max-width: 910px;
-  margin-inline: auto;
+  /* margin-inline: auto; */
+  /* margin: auto; */
 }
 .card {
   padding: 3rem;

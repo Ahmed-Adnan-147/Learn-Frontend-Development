@@ -1,0 +1,37 @@
+ * What is a Media Type?
+   -> Media is basically of two types:
+      i) Print media
+	 ii) screen media
+   -> We can show up our content in 2 ways:
+      i) in website
+	 ii) in book or article
+   -> So, here we are talking about where to display the media, whether on screen, or by 
+      printing it.
+	  
+   ---------------------------------------------------------------------------------------------
+   * Issue with Darker Background and Printing Colors:	  
+   -> So, now if u want to print your website and see. When u click on ctrl + p, then you may 
+      notice that, sometimes the bgcolor will change to white, it happens mostly, so if you want
+      that background to get print, so we can control it by checkbox in more settings after ctrl
+      p, or you may use a property called 
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;	
+
+   -> So, if the print-color-adjust is not working in chrome, then you may use
+      -webkit-print-color-adjust property to force use.
+
+   -> The website which we are seeing in the browser is the screen media and when we click to 
+      print the website, that is the print media.
+
+   -> Now, if u want your website colors to be changed when printing, then you may use the 
+      print media type. By default media will be all.
+      @media print {
+		.square {
+			border: 25px solid red;
+			background-color: skyblue;
+		}
+	  }	  
+	  
+   NOTE: Cascade rule works here, but specificity doesn't work for media types.
+        -> Cascade means if the code of the media is written down then it overrides the top
+		   code.
