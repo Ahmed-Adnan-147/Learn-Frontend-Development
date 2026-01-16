@@ -1,0 +1,78 @@
+ * What are Media Queries?
+   -> we use media queries, to make the layout or the website responsive on mobiles, tablets, PC's,
+      smart watches etc.
+
+   ---------------------------------------------------------------------------------------------
+   * Understand Media Features in CSS:
+     -> As we already seen media types, where we have screen & print type, similarly the each media
+        has its own features, like in laptop, the orientation of the media will be landscape
+		(vertical screen), i.e., the width is more than the height, whereas, in mobile phones, the 
+		default orientation will be portrait(vertical screen), i.e., the height will be more when 
+		compare to width of the screen. In this case, the orientation is one of the feature of the 
+		media.
+	 -> So, basically we can change the media orientation for print & screen media by the use of 
+	    these features. Media features are written in parenthesis everytime.
+	 -> we usually give two values in parenthesis, one is the orientation of the media, and another
+	    is the width or height, I mean size in which the media should be applied.
+		@media (orientation: portrait) {
+			.square {
+				border: 25px solid red;
+				background-color: skyblue;
+			}
+		}
+	 
+	 -> we can use multiple media features by using the and keyword as given below:
+	    @media (orientation: portrait) and (width > 500px) {
+			.square {
+				border: 25px solid red;
+				background-color: skyblue;
+			}
+		}
+		
+   ---------------------------------------------------------------------------------------------
+   * Media Queries Level 4 Syntax:
+     -> We usually don't use orientation, only the width is used.
+	 NOTE: media feature display the user-agent features, means the browser features, such as 
+	       height & width of the browser.
+	    
+		@media (width <= 600px) {
+			.square {
+				border: 25px solid red;
+				background-color: skyblue;
+			}
+		}
+		
+	 -> we can also give the width as in between.
+		@media (400px <= width <= 600px) {
+			.square {
+				border: 25px solid red;
+				background-color: skyblue;
+			}
+		}
+		
+   ---------------------------------------------------------------------------------------------
+   * Media Queries Level 3 Syntax:
+     -> this was the previous level which was used in old times, here we don't write > or < symbols
+	    we prefer to give max-width & min-width in this level of syntax as given below:
+		
+		// it won't apply if the maximum width exceeds 600px in browser.
+		@media (max-width: 600px) {
+			.square {
+				border: 25px solid red;
+				background-color: skyblue;
+			}
+		}
+
+   ---------------------------------------------------------------------------------------------
+   * How to combine both of them(means the media type & media feature or media query):
+     -> we can use this print and screen along with media type & feature, by using and keyword.
+	 -> when we apply this code, then at the time of print it works and prints the color when 
+	    the width is gre
+	 
+		@media print and (min-width: 500px) {
+			.square {
+			border: 25px solid red;
+			background-color: skyblue;
+			}
+		}
+		

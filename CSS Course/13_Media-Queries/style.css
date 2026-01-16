@@ -1,0 +1,48 @@
+.square {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  border: 25px solid blue;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+
+
+@media print and (min-width: 500px) {
+  .square {
+    border: 25px solid red;
+    background-color: skyblue;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .square {
+    border: 25px solid red;
+    background-color: skyblue;
+  }
+} */
+
+/* level 4 syntax of media queries */
+/* @media (400px <= width <= 600px) {
+  .square {
+    border: 25px solid red;
+    background-color: skyblue;
+  }
+} */
+
+
+
+
+/* @media (orientation: portrait) and (width > 500px) {
+  .square {
+    border: 25px solid red;
+    background-color: skyblue;
+  }
+} */
+/* @media (orientation: portrait) {
+  .square {
+    border: 25px solid red;
+    background-color: skyblue;
+  }
+} */
