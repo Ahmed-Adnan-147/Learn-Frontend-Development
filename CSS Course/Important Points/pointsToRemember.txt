@@ -1,0 +1,65 @@
+ * Why 100vw / 100vh causes a scrollbar?
+   -> vw and vh are based on the viewport, not the document.
+   -> 100vh = full visible screen height
+   -> 100vw = full visible screen width INCLUDING the scrollbar
+   -> The vertical scrollbar itself has width (usually ~15–17px).
+   
+ * Why height: 100% doesn’t work without content?
+   NOTE: Percentage heights only work if the parent has an explicit height.
+   -> The parent (body) has no defined height.
+   -> You must define height all the way up the chain.
+      html, body {
+       height: 100%;
+        margin: 0;
+      }
+
+      .main {
+        height: 100%;
+      }
+	  
+ * Difference between vh and % (mental model):
+   -> 100vh = Viewport height (absolute) -> vh = screen ruler
+   -> 100%  = Parent's height (relative) -> %  = inheritance
+
+ * Why 100vh is dangerous in real projects?
+   -> Mobile browsers change viewport height when address bar hides
+   -> Causes jumps / extra scrolling
+   -> iOS Safari especially bad
+      Better Pattern: min-height: 100vh;
+	  Instead of    : height: 100vh;
+	  
+ * Best-practice starter template (USE THIS):
+    * {
+		box-sizing: border-box;
+	}
+
+	html, body {
+		height: 100%;
+		margin: 0;
+	}
+
+	body {
+		min-height: 100vh;
+	}
+	
+	Now you can safely use:
+    - % heights
+    - Flexbox
+    - Grid
+    - No mystery scrollbars
+	
+ * Quick summary (save this):
+   -> 100vw includes scrollbar → causes horizontal scroll
+   -> % height needs explicit parent height
+   -> Content makes auto look like %
+   -> Prefer min-height: 100vh over height: 100vh
+   -> Always reset html, body
+   
+ * why we usually prefer min-height over height & max-width over width?
+   -> min- and max- properties give CSS permission to adapt, while fixed height and width force it 
+      to break.
+   
+-------------------------------------------------------------------------------------------
+ * 
+
+      
